@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block page_name %}
+Home
+{% endblock page_name %}
+
+
+
+{% block content %}
+<h1>{{room}}</h1>
+<h3>{{room.description}}</h3>
+<h4>Price: {{room.price}}CAD per night</h4>
+<h4>By {{room.host.username}}</h4>
+<h4>Amenities</h4>
+<ul>{% for a in room.amenities.all%}
+    <li>
+        {{a}}
+    </li>
+    {%endfor%}
+</ul>
+
+<h4>Facility</h4>
+<ul>{% for f in room.facilities.all%}
+    <li>
+        {{f}}
+    </li>
+    {%endfor%}
+</ul>
+
+<h4>Rules</h4>
+<ul>{% for r in room.house_rule.all%}
+    <li>
+        {{r}}
+    </li>
+    {%endfor%}
+</ul>
+{% endblock content %}
