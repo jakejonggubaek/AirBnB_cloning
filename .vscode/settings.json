@@ -1,0 +1,11 @@
+{
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=97"
+    ],
+    "python.pythonPath": "/Users/cliff/.local/share/virtualenvs/AirBnB_cloning-voWLXEXq/bin/python"
+}
